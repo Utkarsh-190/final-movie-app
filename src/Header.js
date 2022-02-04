@@ -16,7 +16,7 @@ function Header() {
   const handleChange = (e) => {
     e.preventDefault();
     getMoviesBySearch(query).then((data) => {
-      // setMovieList([]);
+      setMovieList([]);
       for (let movie in data) {
         setMovieList((prev) => [...prev, data[movie]]);
       }
