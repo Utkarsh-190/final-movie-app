@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/final-movie-app/static/css/main.414b7b80.chunk.css",
+    "main.js": "/final-movie-app/static/js/main.44bb5313.chunk.js",
+    "main.js.map": "/final-movie-app/static/js/main.44bb5313.chunk.js.map",
+    "runtime-main.js": "/final-movie-app/static/js/runtime-main.eb7c620e.js",
+    "runtime-main.js.map": "/final-movie-app/static/js/runtime-main.eb7c620e.js.map",
+    "static/js/2.6cafa00c.chunk.js": "/final-movie-app/static/js/2.6cafa00c.chunk.js",
+    "static/js/2.6cafa00c.chunk.js.map": "/final-movie-app/static/js/2.6cafa00c.chunk.js.map",
+    "static/js/3.d2b17bf3.chunk.js": "/final-movie-app/static/js/3.d2b17bf3.chunk.js",
+    "static/js/3.d2b17bf3.chunk.js.map": "/final-movie-app/static/js/3.d2b17bf3.chunk.js.map",
+    "index.html": "/final-movie-app/index.html",
+    "static/css/main.414b7b80.chunk.css.map": "/final-movie-app/static/css/main.414b7b80.chunk.css.map",
+    "static/js/2.6cafa00c.chunk.js.LICENSE.txt": "/final-movie-app/static/js/2.6cafa00c.chunk.js.LICENSE.txt",
+    "static/media/YouTube-Logo.wine.0000cc9f.svg": "/final-movie-app/static/media/YouTube-Logo.wine.0000cc9f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb7c620e.js",
+    "static/js/2.6cafa00c.chunk.js",
+    "static/css/main.414b7b80.chunk.css",
+    "static/js/main.44bb5313.chunk.js"
+  ]
+}
