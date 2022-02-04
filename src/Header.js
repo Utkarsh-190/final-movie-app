@@ -9,6 +9,14 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import { getMoviesBySearch } from "./api";
 import MovieContext from "./MovieContext";
+import { TextField } from "@mui/material";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  input: {
+    color: "white",
+  },
+});
 
 function Header() {
   const [query, setquery] = useState("");
@@ -16,13 +24,14 @@ function Header() {
   const handleChange = (e) => {
     e.preventDefault();
     getMoviesBySearch(query).then((data) => {
-      // setMovieList([]);
+      setMovieList([]);
       for (let movie in data) {
         setMovieList((prev) => [...prev, data[movie]]);
       }
       console.log(movieList);
     });
   };
+  const classes = useStyles();
 
   return (
     <div className="header">
@@ -30,15 +39,26 @@ function Header() {
                 <MenuIcon/>
                 <Logo className="header__logo" />
             </div> */}
-      <form className="header__middle">
+      <form className="header__middle" onSubmit={handleChange}>
         <input
           type="text"
           value={query}
+          placeholder="Enter movie name"
           onChange={(e) => {
             setquery(e.target.value);
           }}
           className="header__input"
         />
+        {/* <TextField
+          // sx={{ input: { color: "white", outlineColor: "white" } }}
+          variant="outlined"
+          value={query}
+          label="Enter movie name"
+          onChange={(e) => {
+            setquery(e.target.value);
+          }}
+          className="header__input"
+        /> */}
         <button onClick={handleChange} className="header__search">
           <SearchIcon className="header__search_icon" />
         </button>
