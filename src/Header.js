@@ -59,6 +59,7 @@ function Header() {
           }}
           className="header__input"
         /> */}
+        {/* comment */}
         <button onClick={handleChange} className="header__search">
           <SearchIcon className="header__search_icon" />
         </button>
