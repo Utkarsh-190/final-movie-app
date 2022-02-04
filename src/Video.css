@@ -1,0 +1,6 @@
+.videos {
+  flex: 0.85;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
